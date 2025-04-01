@@ -1,7 +1,5 @@
-import person1 from "../assets/person1.png";
-import person2 from "../assets/person2.png";
-import person3 from "../assets/person3.png";
-import person4 from "../assets/person4.png";
+import ceo from "../assets/ceo.jpg";
+import cto from "../assets/cto.jpg";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 function Equipe() {
   return (
@@ -26,21 +24,23 @@ function Equipe() {
           </p>
         </div>
       </div>
-      <main className="">
+      <main className="px-4">
         <div className="container flex flex-col items-center justify-center mx-auto">
-          <div className="grid grid-cols-2 gap-10 lg:grid-cols-4 ">
+          <div className="grid grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 justify-items-center max-w-7xl">
             {/* Team Member */}
-            <div className="overflow-hidden ">
-              <img
-                src={person1}
-                alt="Person 1"
-                className="max-w-[303px] max-h-[303px] object-cover"
-              />
-              <div className="p-4">
-                <h3 className="mb-1 text-lg font-semibold text-black dark:text-white">
-                  Darrell Steward
+            <div className="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+              <div className="aspect-w-1 aspect-h-1">
+                <img
+                  src={ceo}
+                  alt="Ceo"
+                  className="w-full h-[300px] object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+                  Bayrem Ben Algia
                 </h3>
-                <p className="mb-4 text-[#635226]">Co-founder</p>
+                <p className="mb-4 text-[#635226] dark:text-gray-300">CEO</p>
                 <div className="flex justify-start space-x-4">
                   <a href="#" className="text-black hover:text-blue-500">
                     <Facebook size={20} strokeWidth={1.5} />
@@ -57,74 +57,21 @@ function Equipe() {
                 </div>
               </div>
             </div>
+
             {/* Team Member */}
-            <div className="overflow-hidden ">
-              <img
-                src={person2}
-                alt="Person 2"
-                className="max-w-[303px] max-h-[303px] object-cover"
-              />
-              <div className="p-4">
-                <h3 className="mb-1 text-lg font-semibold text-black dark:text-white">
-                  Darrell Steward
-                </h3>
-                <p className="mb-4 text-[#635226]">Co-founder</p>
-                <div className="flex justify-start space-x-4">
-                  <a href="#" className="text-black hover:text-blue-500">
-                    <Facebook size={20} strokeWidth={1.5} />
-                  </a>
-                  <a href="#" className="text-black hover:text-blue-400">
-                    <Twitter size={20} strokeWidth={1.5} />
-                  </a>
-                  <a href="#" className="text-black hover:text-blue-700">
-                    <Linkedin size={20} strokeWidth={1.5} />
-                  </a>
-                  <a href="#" className="text-black hover:text-pink-500">
-                    <Instagram size={20} strokeWidth={1.5} />
-                  </a>
-                </div>
+            <div className="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+              <div className="aspect-w-1 aspect-h-1">
+                <img
+                  src={cto}
+                  alt="Cto"
+                  className="w-full h-[300px] object-cover"
+                />
               </div>
-            </div>
-            {/* Team Member */}
-            <div className="overflow-hidden ">
-              <img
-                src={person3}
-                alt="Person 2"
-                className="max-w-[303px] max-h-[303px] object-cover"
-              />
-              <div className="p-4">
-                <h3 className="mb-1 text-lg font-semibold text-black dark:text-white">
-                  Darrell Steward
+              <div className="p-6">
+                <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+                  Walid Kacem
                 </h3>
-                <p className="mb-4 text-[#635226]">Co-founder</p>
-                <div className="flex justify-start space-x-4">
-                  <a href="#" className="text-black hover:text-blue-500">
-                    <Facebook size={20} strokeWidth={1.5} />
-                  </a>
-                  <a href="#" className="text-black hover:text-blue-400">
-                    <Twitter size={20} strokeWidth={1.5} />
-                  </a>
-                  <a href="#" className="text-black hover:text-blue-700">
-                    <Linkedin size={20} strokeWidth={1.5} />
-                  </a>
-                  <a href="#" className="text-black hover:text-pink-500">
-                    <Instagram size={20} strokeWidth={1.5} />
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Team Member */}
-            <div className="overflow-hidden ">
-              <img
-                src={person4}
-                alt="Person 2"
-                className="max-w-[303px] max-h-[303px] object-cover"
-              />
-              <div className="p-4">
-                <h3 className="mb-1 text-lg font-semibold text-black dark:text-white">
-                  Darrell Steward
-                </h3>
-                <p className="mb-4 text-[#635226]">Co-founder</p>
+                <p className="mb-4 text-[#635226] dark:text-gray-300">CTO</p>
                 <div className="flex justify-start space-x-4">
                   <a href="#" className="text-black hover:text-blue-500">
                     <Facebook size={20} strokeWidth={1.5} />
